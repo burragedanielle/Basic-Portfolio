@@ -8,7 +8,8 @@ body {
 /* text elements begin here */
 
 h1 {
-    font-size: 24px;
+    margin-top: 0;
+
 }
 
 h1,
@@ -20,31 +21,36 @@ h2 {
 
 nav {
     width: 100%;
-    height: 10%;
+    height: 75px;
     position: fixed; 
     top: 0; 
     z-index: -1;
-
-/* until further notice     */
+    color: #fff;
+/* until further notice */
     background-color: #777;
-
 }
+
+/* navigation element ends here */
 
 /* formatting classes begin here */
 
 .wrapper {
     width: 960px;
     margin: auto;
-
+    min-height: calc(100vh - 50px);
 }
+
+/* remember to fix this title card cuz its messed up*/
 
 .titleCard {
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 15%;
-    position: absolute;
+    padding: 10px;
+    width: 250px;
+    position: fixed;
     top: 0;
-    left: 158px;
+    left: 150px;
+    max-height: 75px;
     text-align: center;
 }
 
@@ -67,12 +73,16 @@ nav {
     float: left;
 }
 
+/* footer begins here */
 
 footer {
     clear: both;
     color: #ffff;
     background-color: #666666;
-    
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    border-top: 5px solid #4aaaa5;
 }
 
 
