@@ -9,6 +9,11 @@ h2 {
     font-size: 1.3em;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* navigation is here */
 
 .main-nav {
@@ -70,13 +75,15 @@ hr {
     background-color: #fff;
     padding: 20px 50px;
     margin-top: 30px;
+    margin-bottom: 30px;
     border: 1px solid #ddd;
     font-size: 1em;
-    line-height: 1.5em;
+    display: inline-block;
 }
 
 .aboutMeText {
     padding-top: 1em;
+    line-height: 1.5em;
 }
 
 #bioImage {
@@ -89,49 +96,29 @@ hr {
 
 /* portfolio project cards */
 
-.projectCards {
-    display: inline-block;
+.projectText { 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em;
-}
-
-.projectText { 
     background-color: #4aaaa5;
+    color: #fff;
     width: 250px;
-    padding: 10px 0;
+    padding: 10px 0px;
     z-index: 1;
     top: -60px;
     position: relative;
     text-align: center;
 }
 
-#projectCard1 {
+.projectCard {
     float: left;
     margin-right: 20px;
 }
 
-#projectCard2 {
-    float: left;
-    margin-right: 20px;
+clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
-
-#projectCard3 {
-    float: left;
-    margin-right: 20px;
-}
-
-#projectCard4 {
-    float: left;
-    margin-right: 20px;
-}
-
-
-
-
-
-
-
-
 
 /* footer of the document is here */
 
@@ -145,28 +132,3 @@ footer {
 }
 
 /* footer of the document will end here */
-    
-clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* naviagtion element begins here */
-
-
-/* .wrapper {
-    width: 960px;
-    margin: auto;
-    min-height: calc(100vh - 70px);
-}
