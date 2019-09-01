@@ -46,6 +46,12 @@ a {
     min-height: calc(100vh - 160px);
 }
 
+.wrapperContact {
+    width: 960px;
+    margin: 0 auto;
+    min-height: calc(100vh - 160px);
+}
+
 /* title card */
 
 .titleCard {
@@ -65,13 +71,15 @@ hr {
 }
 
 #aboutMeHead,
-#portfolioHead {
+#portfolioHead,
+#contactHead {
     color:  #4aaaa5;
     font-size: 1.5em;
 }
 
 .aboutContent,
-.portfolioContent {
+.portfolioContent,
+.contactContent {
     background-color: #fff;
     padding: 20px 50px;
     margin-top: 30px;
@@ -79,6 +87,10 @@ hr {
     border: 1px solid #ddd;
     font-size: 1em;
     display: inline-block;
+}
+
+.contactContent {
+    width: 75%;
 }
 
 .aboutMeText {
@@ -92,6 +104,55 @@ hr {
     float: left;
     margin-right: 15px;
     padding-top: 1em;
+}
+
+/* contact section form */
+
+form {
+    max-width: 500px;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    height: auto;
+    background: #eee;
+    border-radius: 8px;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 20px;
+}
+
+input[type="textarea"] {
+    width: 100%;
+    background: #eee;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    height: 150px;
+    margin: 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    background: #4aaaa5;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 18px;
 }
 
 /* portfolio project cards */
