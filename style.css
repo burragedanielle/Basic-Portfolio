@@ -104,7 +104,6 @@ hr {
 /* contact section form */
 
 form {
-    max-width: 960px;
     margin: 10px 5px;
     padding: 10px 20px;
     border-radius: 8px;
@@ -169,6 +168,13 @@ label {
     float: left;
     margin-right: 20px;
 }
+
+.projectImage {
+    width: 250px;
+    height: 250px;
+
+}
+
 
 clearfix::after {
     content: '';
